@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SZGameVC">
+            <connections>
+                <outlet property="dune1" destination="JoV-qy-SZb" id="p7q-bS-9oB"/>
+                <outlet property="dune2" destination="iqZ-2d-EJS" id="uE9-xe-waQ"/>
+                <outlet property="dune3" destination="Blz-Lj-6nu" id="RXO-2v-zh4"/>
+                <outlet property="pauseBtn" destination="5Vj-Gt-ZcP" id="AN5-O7-dPz"/>
+                <outlet property="scoreLabel" destination="Uc7-b3-HGP" id="XVi-wX-kAQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundDunes.png" translatesAutoresizingMaskIntoConstraints="NO" id="LhI-ic-uZA">
+                    <frame key="frameInset" width="736" height="158"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dune3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Blz-Lj-6nu">
+                    <frame key="frameInset" minY="120" width="736" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dune2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iqZ-2d-EJS">
+                    <frame key="frameInset" minY="195" width="736" height="157"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dune1.png" translatesAutoresizingMaskIntoConstraints="NO" id="JoV-qy-SZb">
+                    <frame key="frameInset" minY="286" width="736" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-Gt-ZcP">
+                    <frame key="frameInset" minY="7" width="69" height="63"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="Pause.png"/>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="nsh-cl-Dg9"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Achievement.png" translatesAutoresizingMaskIntoConstraints="NO" id="mpO-xw-nAW">
+                    <frame key="frameInset" minY="337" width="143" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-b3-HGP">
+                    <frame key="frameInset" minX="7" minY="360" width="129" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="221" y="-67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Achievement.png" width="390" height="183"/>
+        <image name="BackgroundDunes.png" width="1024" height="292"/>
+        <image name="Dune1.png" width="1024" height="242"/>
+        <image name="Dune2.png" width="1024" height="204"/>
+        <image name="Dune3.png" width="1024" height="228"/>
+        <image name="Pause.png" width="116" height="116"/>
+    </resources>
+</document>

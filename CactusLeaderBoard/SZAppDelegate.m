@@ -6,7 +6,7 @@
 //  Copyright © 2017年 ronghua_li. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SZAppDelegate.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +15,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window=[[UIWindow alloc] initWithFrame:SCREENFRAME];
+    self.window.backgroundColor=[UIColor whiteColor];
+    SZMainVC* mainVC=[[SZMainVC alloc] init];
+    UINavigationController* nav=[[UINavigationController  alloc] initWithRootViewController:mainVC];
+    self.window.rootViewController=nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

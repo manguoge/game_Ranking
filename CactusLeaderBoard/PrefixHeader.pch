@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  CactusLeaderBoard
+//
+//  Created by comfouriertech on 17/1/15.
+//  Copyright © 2017年 ronghua_li. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#define NSLog(...)
+#else
+#define NSLog(...) NSLog(__VA_ARGS__)
+#endif
+#define SCREENFRAME [[UIScreen mainScreen]bounds]
+#define SCREENWIDTH SCREENFRAME.size.width
+#define SCREENHEIGHT SCREENFRAME.size.height
+
+
+#endif /* PrefixHeader_pch */

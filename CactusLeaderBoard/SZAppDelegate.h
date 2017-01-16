@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  CactusLeaderBoard
 //
 //  Created by comfouriertech on 17/1/15.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SZMainVC.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@interface ViewController : UIViewController
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
